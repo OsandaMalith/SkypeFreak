@@ -3,4 +3,4 @@ SkypeFreak
 
 A Forensic Framework for Skype
 
-Usage : SkypeWin.py -u <Skype Username>
+http://osandamalith.github.io/SkypeFreak/
