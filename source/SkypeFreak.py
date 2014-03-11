@@ -281,6 +281,10 @@ def mainMenu(skypeDB, PathName):
 			sys.exit(0) 
 
 def banner(skypeDB, PathName):
+	if os.name == "nt":
+		os.system('cls')
+	else:
+		os.system('clear')
 	
 	print  '''
 8""""8                         
@@ -353,7 +357,7 @@ def main():
 	if os.name == "nt":
 		os.system('cls')
 	else:
-		os.system("clear")
+		os.system('clear')
 	while True:
 		username = str(raw_input("[~] Enter your Skype Username: "))
 		menu(username)
