@@ -338,9 +338,9 @@ def menu(username):
 		PathName = os.getenv('appdata') + "\\Skype\\" + username
 	elif os.name == "posix":
 		PathName = os.getenv('HOME') + "/.Skype/" + username
-		if os.path.isdir(PathName) == False:
-			PathName = os.getenv('HOME') + "/Library/Application Support/Skype/" + username
-	
+	elif ((os.name == "posix") and (os.path.isdir(PathName) == False)):
+		PathName = os.getenv('HOME') + "/Library/Application Support/Skype/" + username
+
 	if PathName == None : 
 		print '[!] Please Enter a valid Skype username ' 
 		
