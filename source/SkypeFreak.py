@@ -281,7 +281,7 @@ def mainMenu(skypeDB, PathName):
 			sys.exit(0) 
 
 def banner(skypeDB, PathName):
-	os.system('cls')
+	
 	print  '''
 8""""8                         
 8      e   e  e    e eeeee eeee
@@ -330,14 +330,19 @@ e   88 88   8   88   88    88
 
 def menu(username):
 
-	PathName = os.getenv('appdata') + "\\Skype\\" + username
+	if os.name == "nt":
+		PathName = os.getenv('appdata') + "\\Skype\\" + username
+	elif os.name == "posix":
+		PathName = os.getenv('HOME') + "/.Skype/" + username
+	else:
+		PathName = os.getenv('HOME') + "/Library/Application Support/Skype/" + username
 	
 	if PathName == None : 
 		print parser.usage
 		exit(0)
 	elif os.path.isdir(PathName) == False:
 		print '[!] Username Does Not Exist ' 
-		exit(0)
+		
 	else:
 		skypeDB = os.path.join(PathName, 'main.db')
 		
@@ -345,7 +350,10 @@ def menu(username):
 			banner(skypeDB,PathName)
 
 def main():
-	os.system('cls')
+	if os.name == "nt":
+		os.system('cls')
+	else:
+		os.system("clear")
 	while True:
 		username = str(raw_input("[~] Enter your Skype Username: "))
 		menu(username)
