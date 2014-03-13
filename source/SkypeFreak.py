@@ -3,14 +3,17 @@ Title: SkypeFreak
 Description: A cross platform forensic tool for Skype
 Author: Osanda Malith (@OsandaMalith)
 URL: http://osandamalith.github.io/SkypeFreak/
-Disclaimer:	This tool is meant for ethical (legal) purposes only.
+
+Disclaimer: This tool is meant for ethical (legal) purposes only.
+
 Notes:	Please note this tool may contain errors, and
-		is provided "as it is". There is no guarantee
-		that it will work on your target server(s), as
-		the code may have to be adapted. 
-		This is to avoid script kiddie abuse as well.
+	is provided "as it is". There is no guarantee
+	that it will work on your target server(s), as
+	the code may have to be adapted. 
+	This is to avoid script kiddie abuse as well.
 	
-	This program is free software: you can redistribute it and/or modify
+License:
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
