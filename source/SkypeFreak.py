@@ -50,11 +50,10 @@ def Profile(skypeDB, PathName):
 		print '[+] Profile Date: %s'%(str(row[4]))
 
 	while True:
-		try:
-			choice = raw_input("\n[~] Generate Output?\n")
-			choice = choice.lower()
-		except (NameError, SyntaxError, EOFError):
-			print '[!] Error Occured'
+		
+		choice = raw_input("\n[~] Generate Output?\n")
+		choice = choice.lower()
+	
 		if choice[0] == 'y':
 			try:
 				output = profile
@@ -71,7 +70,7 @@ def Profile(skypeDB, PathName):
 		if choice[0] == 'n':
 			mainMenu(skypeDB, PathName)
 			break 
-
+		
 
 def Contacts(skypeDB, PathName):
 	connexion = sqlite3.connect(skypeDB)
@@ -309,6 +308,7 @@ def mainMenu(skypeDB, PathName):
 			sys.exit(0) 
 
 def banner(skypeDB, PathName):
+	
 	if os.name == "nt":
 		os.system('cls')
 	else:
@@ -331,7 +331,7 @@ e   88 88   8   88   88    88
 
 '''
 	print  '%s' %('A creation of Osanda Malith\nURL: http://osandamalith.github.io/SkypeFreak/') + '\n'
-
+	
 	while True:
 		try:
 			choice = int(raw_input("[~] What Do You Like to Investigate? \
@@ -358,6 +358,7 @@ e   88 88   8   88   88    88
 			sys.exit(0)
 		else:
 			print '[!] Invalid Choice'
+
 
 
 def menu(username):
@@ -388,14 +389,23 @@ def menu(username):
 			banner(skypeDB,PathName)
 
 def main():
-	if os.name == "nt":
-		os.system('cls')
-	else:
-		os.system('clear')
-	while True:
-		username = str(raw_input("[~] Enter your Skype Username: "))
-		menu(username)
-		break
+	try:
+		if os.name == "nt":
+			os.system('cls')
+		else:
+			os.system('clear')
+		while True:
+			username = str(raw_input("[~] Enter your Skype Username: "))
+			menu(username)
+			break
+				
+	except (KeyboardInterrupt):
+		print '[!] Ctrl + C detected\n[!] Exiting'
+		sys.exit(0)
+	except (EOFError):
+		print '[!] Ctrl + D detected\n[!] Exiting'
+		sys.exit(0)
+		
 			
 
 if __name__ == "__main__": 
