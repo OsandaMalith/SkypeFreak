@@ -331,7 +331,7 @@ e   88 88   8   88   88    88
 	88    88   8 88ee 88  8 88   8
 
 '''
-	print  '%s' %('[~] A creation of Osanda Malith\n[~] Follow @OsandaMalith\n[~]URL: http://osandamalith.github.io/SkypeFreak/') + '\n'
+	print  '%s' %('[*] A creation of Osanda Malith\n[*] Follow @OsandaMalith\n[*] URL: http://osandamalith.github.io/SkypeFreak/') + '\n'
 	
 	while True:
 		try:
