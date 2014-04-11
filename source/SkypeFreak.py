@@ -1,3 +1,4 @@
+#!/usr/bin/python
 '''
 Title: SkypeFreak
 Description: A cross platform forensic tool for Skype
@@ -8,7 +9,7 @@ Disclaimer: This tool is meant for ethical (legal) purposes only.
 
 Notes:	Please note this tool may contain errors, and
 	is provided "as it is". There is no guarantee
-	that it will work on your target server(s), as
+	that it will work on your target systems(s), as
 	the code may have to be adapted. 
 	This is to avoid script kiddie abuse as well.
 	
@@ -330,7 +331,7 @@ e   88 88   8   88   88    88
 	88    88   8 88ee 88  8 88   8
 
 '''
-	print  '%s' %('A creation of Osanda Malith\nURL: http://osandamalith.github.io/SkypeFreak/') + '\n'
+	print  '%s' %('[~] A creation of Osanda Malith\n[~] Follow @OsandaMalith\n[~]URL: http://osandamalith.github.io/SkypeFreak/') + '\n'
 	
 	while True:
 		try:
