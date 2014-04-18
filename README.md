@@ -19,7 +19,7 @@ e   88 88   8   88   88    88
     88    88   8 88ee 88  8 88   8
 
 
-[*] A creation of Osanda Malith & Muhammad Yasoob Ullah Khalid
+[*] A creation of Osanda Malith & contributors
 [*] Follow @OsandaMalith and @yasoobkhalid
 [*] URL: http://osandamalith.github.io/SkypeFreak/
 
