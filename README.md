@@ -1,7 +1,7 @@
 SkypeFreak
 ==========
 
-A Forensic Framework for Skype. Just type ```$ python SkypeFreak.py``` in order to run the application. Default run of the program produces the following output:
+A Forensic Framework for Skype. Just type ```$ python SkypeFreak.py``` in order to run the application. The program resides in the source directory. Default run of the program produces the following output:
 
 ```
 8""""8                         
