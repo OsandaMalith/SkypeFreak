@@ -37,6 +37,10 @@ License:
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 '''
+contributors = [
+    'Osanda Malith @osandamalith',
+    'Muhammad Yasoob Ullah Khalid @yasoobkhalid'
+]
 
 class SkypeJunk(object):
     '''
@@ -153,6 +157,12 @@ class SkypeJunk(object):
         else:
             return num
 
+    def _get_contributors(self):
+        print('\nContributors:\n')
+        for one in contributors:
+            print(one)
+        sys.exit(0)
+
     def _gen_report(self):
         data = ''
         if self.type_of == "profile":
@@ -205,7 +215,8 @@ class SkypeJunk(object):
         while choice is None:
             try:
                 choice = int(input("[~] What Do You Like to Investigate? \
-                    \n1. Profile\n2. Contact\n3. Calls\n4. Messages\n5. Generate Full Report\n6. Exit\n" ))
+                    \n1. Profile\n2. Contact\n3. Calls\n4. Messages\n5. Generate Full Report\n\
+6. Print the list of contributors & exit\n7. Exit\n" ))
             except ValueError:
                 print('[!] Enter Only a Number')
         choices = {
@@ -214,9 +225,10 @@ class SkypeJunk(object):
             3   :   self._get_calls,
             4   :   self._get_msgs,
             5   :   self._gen_full_report,
-            6   :   sys.exit
+            6   :   self._get_contributors,
+            7   :   sys.exit
         }
-        if choice != 5:
+        if choice not in [5,6]:
             choices.get(choice,sys.exit)()
             data = self._gen_report()
             print(data)
@@ -263,7 +275,7 @@ e   88 88   8   88   88    88
     88    88   8 88ee 88  8 88   8
 
 ''')
-    print('[*] A creation of Osanda Malith and greatly modified by Muhammad Yasoob Ullah Khalid\n\
+    print('[*] A creation of Osanda Malith & Muhammad Yasoob Ullah Khalid\n\
 [*] Follow @OsandaMalith and @yasoobkhalid\n\
 [*] URL: http://osandamalith.github.io/SkypeFreak/\n')
 

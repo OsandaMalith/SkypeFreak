@@ -19,7 +19,7 @@ e   88 88   8   88   88    88
     88    88   8 88ee 88  8 88   8
 
 
-[*] A creation of Osanda Malith and greatly modified by Muhammad Yasoob Ullah Khalid
+[*] A creation of Osanda Malith & Muhammad Yasoob Ullah Khalid
 [*] Follow @OsandaMalith and @yasoobkhalid
 [*] URL: http://osandamalith.github.io/SkypeFreak/
 
@@ -29,7 +29,8 @@ e   88 88   8   88   88    88
 3. Calls
 4. Messages
 5. Generate Full Report
-6. Exit
+6. Print the list of contributors & exit
+7. Exit
 ```
 
 Select the option which you deem suitable for the given conditions. After that Skype Freak will perform the given task and will print the output to console and will ask you to write the extracted data to disk. If you would like to suggest any improvements then feel free to open a new issue.
