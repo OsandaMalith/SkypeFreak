@@ -2,7 +2,6 @@
 from __future__ import print_function
 import os
 import sqlite3
-import optparse
 import sys
 import time
 try:
@@ -12,7 +11,7 @@ except:
 '''
 Title: SkypeFreak
 Description: A cross platform forensic tool for Skype
-Author: Osanda Malith (@OsandaMalith) & Yasoob Khalid (@yasoobkhalid)
+Author: Osanda Malith (@OsandaMalith) 
 URL: http://osandamalith.github.io/SkypeFreak/
 
 Disclaimer: This tool is meant for ethical (legal) purposes only.
@@ -38,8 +37,8 @@ License:
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 '''
 contributors = [
-    'Osanda Malith @osandamalith',
-    'Muhammad Yasoob Ullah Khalid @yasoobkhalid'
+
+    'Special thanks to Muhammad Yasoob Ullah Khalid @yasoobkhalid for improving\nthe code and extending support'
 ]
 
 class SkypeJunk(object):
@@ -275,8 +274,8 @@ e   88 88   8   88   88    88
     88    88   8 88ee 88  8 88   8
 
 ''')
-    print('[*] A creation of Osanda Malith & Muhammad Yasoob Ullah Khalid\n\
-[*] Follow @OsandaMalith and @yasoobkhalid\n\
+    print('[*] A creation of Osanda Malith \n\
+[*] Follow @OsandaMalith \n\
 [*] URL: http://osandamalith.github.io/SkypeFreak/\n')
 
 def main():
