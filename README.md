@@ -41,7 +41,7 @@ We are trying to develop some standalone forensic programs for various computer 
 * [SkypeFreak](#)
 * [ChromeFreak](https://github.com/OsandaMalith/chromefreak)
 
-Copatibility:
+Compatibility:
 --------------
 The program works with Python *2.6* upto *3.x*
 Supported Operating Systems:
